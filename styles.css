@@ -46,8 +46,51 @@ body{
     text-decoration: underline;
 }
 
-.title{
-    font-family: "Inter", bold;
-    font-size: 64px;
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.title{
+    width: 900px;
+    height: 200px;
+    display: inline-block;
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 64px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.highlight{
+    background: linear-gradient(
+        to right, /* Direção do gradiente */
+        rgba(162, 132, 94, 1) 18%, /* 100% opacidade */
+        rgba(162, 132, 94, 1) 26%, /* 100% opacidade */
+        rgba(162, 132, 94, 0.63) 38%, /* 63% opacidade */
+        rgba(162, 132, 94, 0.63) 39%, /* 63% opacidade */
+        rgba(162, 132, 94, 0.62) 49%, /* 62% opacidade */
+        rgba(162, 132, 94, 0.62) 51%, /* 62% opacidade */
+        rgba(162, 132, 94, 0.61) 69%, /* 61% opacidade */
+        rgba(162, 132, 94, 0.56) 89%, /* 56% opacidade */
+        rgba(162, 132, 94, 0.55) 95%, /* 55% opacidade */
+        rgba(162, 132, 94, 0.55) 100% /* 55% opacidade */
+    );
+    background-size: 400% 100%;
+    animation: degrade 7s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x:0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
