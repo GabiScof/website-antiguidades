@@ -67,17 +67,17 @@ body{
 
 .highlight{
     background: linear-gradient(
-        to right, /* Direção do gradiente */
-        rgba(162, 132, 94, 1) 18%, /* 100% opacidade */
-        rgba(162, 132, 94, 1) 26%, /* 100% opacidade */
-        rgba(162, 132, 94, 0.63) 38%, /* 63% opacidade */
-        rgba(162, 132, 94, 0.63) 39%, /* 63% opacidade */
-        rgba(162, 132, 94, 0.62) 49%, /* 62% opacidade */
-        rgba(162, 132, 94, 0.62) 51%, /* 62% opacidade */
-        rgba(162, 132, 94, 0.61) 69%, /* 61% opacidade */
-        rgba(162, 132, 94, 0.56) 89%, /* 56% opacidade */
-        rgba(162, 132, 94, 0.55) 95%, /* 55% opacidade */
-        rgba(162, 132, 94, 0.55) 100% /* 55% opacidade */
+        to right, 
+        rgba(162, 132, 94, 1) 18%, 
+        rgba(162, 132, 94, 1) 26%, 
+        rgba(162, 132, 94, 0.63) 38%, 
+        rgba(162, 132, 94, 0.63) 39%, 
+        rgba(162, 132, 94, 0.62) 49%, 
+        rgba(162, 132, 94, 0.62) 51%, 
+        rgba(162, 132, 94, 0.61) 69%, 
+        rgba(162, 132, 94, 0.56) 89%, 
+        rgba(162, 132, 94, 0.55) 95%, 
+        rgba(162, 132, 94, 0.55) 100% 
     );
     background-size: 400% 100%;
     animation: degrade 7s linear infinite alternate;
@@ -94,3 +94,43 @@ body{
         background-position: 400%;
     }
 }
+
+#carrossel{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    grid-template-columns: 200px 200px;
+    gap:150px;
+    margin-top: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.legenda{
+    background-color: #a2845e;
+    color:white;
+    border-radius: 8px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.imagem {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
